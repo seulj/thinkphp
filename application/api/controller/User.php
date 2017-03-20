@@ -28,7 +28,7 @@ class User
         }
     }
 
-    public function register()
+    public function login()
     {
         $params['openid'] = input('post.openid') ?: cutout(0, 'openid null');
         $nickname = input('post.nickname') ?: cutout(0, 'nickname null');
