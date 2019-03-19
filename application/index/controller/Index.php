@@ -7,4 +7,9 @@ class Index
     {
         return view('index');
     }
+
+    public function login()
+    {
+        return view('seu/login');
+    }
 }
