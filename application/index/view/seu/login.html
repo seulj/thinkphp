@@ -91,7 +91,7 @@
             window.localStorage.setItem('password', password)
         }
         $.ajax({
-            url: "{:url('index/index/doLoginUser')}",
+            url: "{:url('index/index/doLogin')}",
             data: {
                 phone: phone,
                 password: password,
@@ -99,7 +99,7 @@
             type: 'POST',
             success: function (data) {
                 if (data.message == 'success') {
-                    window.location.href = '/index.php/index/index/indexUser';
+                    window.location.href = '/index.php/index/index/index';
                 } else {
                     toastr.options = {
                         positionClass: "toast-top-center",

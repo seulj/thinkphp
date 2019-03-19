@@ -24,7 +24,7 @@
         <a class="navbar-brand brand-logo logo-width" href="{:url('index/indexUser')}">
             <img src="<?=$_SESSION['think']['logo']?>" alt="logo"/>
         </a>
-        <a class="navbar-brand brand-logo-mini" href="{:url('index/indexUser')}">
+        <a class="navbar-brand brand-logo-mini" href="{:url('index/index')}">
             <img src="<?=$_SESSION['think']['logo_mini']?>" alt="logo"/>
         </a>
     </div>
@@ -32,15 +32,15 @@
     <div class="navbar-menu-wrapper d-flex align-items-center">
         <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
             <li class="nav-item head-nav user-header" id="user-header">
-                <a href="{:url('users/indexUser')}" class="nav-link">
+                <a href="{:url('users/index')}" class="nav-link">
                     <i class="mdi mdi-account-multiple"></i>用户</a>
             </li>
             <li class="nav-item head-nav reply-header" id="reply-header">
-                <a href="{:url('replys/indexUser')}" class="nav-link"><i class="mdi mdi-tooltip-edit"></i>答案
+                <a href="{:url('replys/index')}" class="nav-link"><i class="mdi mdi-tooltip-edit"></i>答案
                 </a>
             </li>
             <li class="nav-item head-nav">
-                <a href="{:url('reports/indexUser')}" class="nav-link">
+                <a href="{:url('reports/index')}" class="nav-link">
                     <i class="mdi mdi-file-pdf"></i>报告</a>
             </li>
         </ul>
@@ -48,7 +48,7 @@
             <li class="nav-item dropdown d-none d-xl-inline-block">
                 <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown"
                    aria-expanded="false">
-                    <span class="profile-text">您好, <?=$_SESSION['think']['doctorName']?>!</span>
+                    <span class="profile-text">您好, 管理员!</span>
                     <img class="img-xs rounded-circle"
                          src="http://disk.epihealth.cn/o_1d4pao0qs1gq6583rg0t03utqa.jpg"
                          alt="Profile image">
@@ -57,10 +57,7 @@
                     <a class="dropdown-item" data-toggle="modal" data-target="#changePasswordModal">
                         修改密码
                     </a>
-                    <a class="dropdown-item" onclick="showModel()">
-                        修改个人资料
-                    </a>
-                    <a href="{:url('index/doLogoutUser')}" class="dropdown-item">
+                    <a href="{:url('index/doLogout')}" class="dropdown-item">
                         退出
                     </a>
                 </div>
@@ -80,22 +77,6 @@
             $($('.head-nav')[i]).addClass('checked')
         }
     })
-    // $.each($('.head-nav'), function (i, n) {
-    //     if ($('.head-nav')[i].innerText === window.localStorage.getItem('checked')) {
-    //         $($('.head-nav')[i]).addClass('checked')
-    //     }
-    // });
-    // $('.head-nav').on('click', function (event, index) {
-    //     $('.head-nav').removeClass('checked')
-    //     console.log($(this))
-    //     window.localStorage.setItem('checked', $(this)[0].innerText)
-    //     $(this).addClass('checked')
-    // })
-    function showModel() {
-        document.getElementById("changeName").value = $("#oldDocName").html();
-        document.getElementById("changeLevel").value = $("#oldDocLevel").html();
-        $('#changeInfoModal').modal('show');
-    }
 </script>
 
 
