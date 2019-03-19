@@ -1,0 +1,106 @@
+{include file="hospital/css" /}
+<body>
+<div class="container-scroller">
+    {include file="hospital/navheader" /}
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        {include file="hospital/navleft" /}
+        <!-- partial -->
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-lg-12 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">用户列表</h4>
+                                <p class="card-description">
+                                    用户信息不可删除和修改，如需帮助，请联系我们
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <!--<th>系统ID</th>-->
+                                            <th>头像</th>
+                                            <th>手机号</th>
+                                            <th>姓名</th>
+                                            <th>微信昵称</th>
+                                            <th>注册时间</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {foreach $list as $vo}
+                                        <tr>
+                                            <td><img src="{$vo.avatar_url}"></td>
+                                            <td>{$vo.phone}</td>
+                                            <td>{$vo.name}</td>
+                                            <td>{$vo.nickname}</td>
+                                            <td>{$vo.create_time}</td>
+                                        </tr>
+                                        {/foreach}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:partials/_footer.html -->
+            {include file="hospital/footer" /}
+            <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+{include file="hospital/model" /}
+<!-- plugins:js -->
+<script src="/static/vendors/js/vendor.bundle.base.js"></script>
+<script src="/static/vendors/js/vendor.bundle.addons.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page-->
+<!-- End plugin js for this page-->
+<!-- inject:js -->
+<script src="/static/js/off-canvas.js"></script>
+<script src="/static/js/misc.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page-->
+<script src="/static/js/dashboard.js"></script>
+<!-- End custom js for this page-->
+<script>
+    var page = 2;
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+            var scrollHeight = $(document).height();
+            var windowHeight = $(this).height();
+            if (scrollHeight - scrollTop - windowHeight < 0.5) {
+                $.ajax({
+                    url: "{:url('index/users/getList')}",
+                    data: {
+                        page: page
+                    },
+                    type: 'POST',
+                    success: function (data) {
+                       if (data.ret === 0){
+                           return
+                       }
+                       var string = String
+                       data.data.list.forEach(val => {
+                           string += '<tr><td><img src="'+val.avatar_url+'"></td><td>'+val.phone+'</td><td>'+val.name+'</td><td>'+val.nickname+'</td><td>'+val.create_time+'</td></tr>'
+                       });
+                       $("tbody").append(string)
+                        page = page + 1
+                    },
+                });
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

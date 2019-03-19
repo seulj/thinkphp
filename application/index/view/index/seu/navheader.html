@@ -1,0 +1,101 @@
+<style>
+    .checked {
+        background: rgba(255, 255, 255, 0.13);
+    }
+
+    .user-header {
+        display: none;
+    }
+
+    .reply-header {
+        display: none;
+    }
+
+    .user-header.show {
+        display: block;
+    }
+
+    .reply-header.show {
+        display: block;
+    }
+</style>
+<nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo logo-width" href="{:url('index/indexUser')}">
+            <img src="<?=$_SESSION['think']['logo']?>" alt="logo"/>
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="{:url('index/indexUser')}">
+            <img src="<?=$_SESSION['think']['logo_mini']?>" alt="logo"/>
+        </a>
+    </div>
+    <div id="power" style="display: none"><?=$_SESSION['think']['power']?></div>
+    <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+            <li class="nav-item head-nav user-header" id="user-header">
+                <a href="{:url('users/indexUser')}" class="nav-link">
+                    <i class="mdi mdi-account-multiple"></i>用户</a>
+            </li>
+            <li class="nav-item head-nav reply-header" id="reply-header">
+                <a href="{:url('replys/indexUser')}" class="nav-link"><i class="mdi mdi-tooltip-edit"></i>答案
+                </a>
+            </li>
+            <li class="nav-item head-nav">
+                <a href="{:url('reports/indexUser')}" class="nav-link">
+                    <i class="mdi mdi-file-pdf"></i>报告</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item dropdown d-none d-xl-inline-block">
+                <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown"
+                   aria-expanded="false">
+                    <span class="profile-text">您好, <?=$_SESSION['think']['doctorName']?>!</span>
+                    <img class="img-xs rounded-circle"
+                         src="http://disk.epihealth.cn/o_1d4pao0qs1gq6583rg0t03utqa.jpg"
+                         alt="Profile image">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                    <a class="dropdown-item" data-toggle="modal" data-target="#changePasswordModal">
+                        修改密码
+                    </a>
+                    <a class="dropdown-item" onclick="showModel()">
+                        修改个人资料
+                    </a>
+                    <a href="{:url('index/doLogoutUser')}" class="dropdown-item">
+                        退出
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+        </button>
+    </div>
+</nav>
+<script>
+    let urls = window.location.href.split('/')[window.location.href.split('/').length - 2] + '/' + window.location.href.split('/')[window.location.href.split('/').length - 1]
+    $('.head-nav').each(function (i, n) {
+        var current = $($('.head-nav')[i].children[0]).attr('href').split('/')[$($('.head-nav')[i].children[0]).attr('href').split('/').length - 2] + '/' + $($('.head-nav')[i].children[0]).attr('href').split('/')[$($('.head-nav')[i].children[0]).attr('href').split('/').length - 1]
+        if (current === urls) {
+            $($('.head-nav')[i]).addClass('checked')
+        }
+    })
+    // $.each($('.head-nav'), function (i, n) {
+    //     if ($('.head-nav')[i].innerText === window.localStorage.getItem('checked')) {
+    //         $($('.head-nav')[i]).addClass('checked')
+    //     }
+    // });
+    // $('.head-nav').on('click', function (event, index) {
+    //     $('.head-nav').removeClass('checked')
+    //     console.log($(this))
+    //     window.localStorage.setItem('checked', $(this)[0].innerText)
+    //     $(this).addClass('checked')
+    // })
+    function showModel() {
+        document.getElementById("changeName").value = $("#oldDocName").html();
+        document.getElementById("changeLevel").value = $("#oldDocLevel").html();
+        $('#changeInfoModal').modal('show');
+    }
+</script>
+
+

@@ -243,6 +243,10 @@ return [
         'secret' => '',
         'grant_type' => 'authorization_code',
     ],
+    'http_exception_template'    =>  [
+        // 定义404错误的重定向页面地址
+        404 =>  APP_PATH . 'index/view/seu/404.html',
+    ],
 
     'jwt_key' => 'jfdksajfkldsajfkdjsaklfdajsfdsfdsklf',
 ];

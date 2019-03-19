@@ -1,0 +1,81 @@
+<style>
+    .active{
+        color: #308ee0;
+    }
+    .user-left{
+        display: none;
+    }
+    .reply-left{
+        display: none;
+    }
+    .user-left.show{
+        display: block;
+    }
+    .reply-left.show{
+        display: block;
+    }
+</style>
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item nav-profile">
+            <div class="nav-link">
+                <div class="user-wrapper">
+                    <div class="profile-image">
+                        <img src="http://disk.epihealth.cn/o_1d4ot1s8h1nf8vkj14hh1orjhh1a.jpg"
+                             alt="profile image">
+                    </div>
+                    <div class="text-wrapper">
+                        <p id="oldDocName" class="profile-name"><?=$_SESSION['think']['doctorName']?></p>
+                        <div>
+                            <small id="oldDocLevel" class="designation text-muted"><?=$_SESSION['think']['doctorLevel']?></small>
+                            <span class="status-indicator online"></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success btn-block" data-toggle="modal" data-target="#insertModal">新增权限
+                    <i class="mdi mdi-plus"></i>
+                </button>
+            </div>
+        </li>
+        <li class="nav-item left-nav">
+            <a class="nav-link" href="{:url('index/indexUser')}">
+                <i class="menu-icon mdi mdi-television"></i>
+                <span class="menu-title">主页</span>
+            </a>
+        </li>
+        <li class="nav-item left-nav">
+            <a class="nav-link" href="{:url('phones/indexUser')}">
+                <i class="menu-icon mdi mdi-phone-settings"></i>
+                <span class="menu-title">权限设置</span>
+            </a>
+        </li>
+        <li class="nav-item left-nav user-left" id="user-left">
+            <a class="nav-link" href="{:url('users/indexUser')}">
+                <i class="menu-icon mdi mdi-account-multiple"></i>
+                <span class="menu-title">用户列表</span>
+            </a>
+        </li>
+        <li class="nav-item left-nav reply-left" id="reply-left">
+            <a class="nav-link" href="{:url('replys/indexUser')}">
+                <i class="menu-icon mdi mdi-tooltip-edit"></i>
+                <span class="menu-title">查看答案</span>
+            </a>
+        </li>
+        <li class="nav-item left-nav">
+            <a class="nav-link" href="{:url('reports/indexUser')}">
+                <i class="menu-icon mdi mdi-file-pdf"></i>
+                <span class="menu-title">报告打印</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<script>
+    // console.log()
+    let url = window.location.href.split('/')[window.location.href.split('/').length - 2] + '/' + window.location.href.split('/')[window.location.href.split('/').length - 1]
+    $('.left-nav').each(function (i, n) {
+        var current = $($('.left-nav')[i].children[0]).attr('href').split('/')[$($('.left-nav')[i].children[0]).attr('href').split('/').length - 2] + '/' + $($('.left-nav')[i].children[0]).attr('href').split('/')[$($('.left-nav')[i].children[0]).attr('href').split('/').length - 1]
+        if (current === url) {
+            $($('.left-nav')[i]).addClass('active')
+        }
+    })
+</script>

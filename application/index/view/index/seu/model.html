@@ -1,0 +1,179 @@
+<div class="modal fade" id="insertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">新增权限</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="phone">手机号</label>
+                        <input type="number" class="form-control" id="phone" placeholder="请输入手机号">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="stage"></select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="insert()">添加</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="doctorPhone" style="display: none;"><?=$_SESSION['think']['username']?></div>
+<div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">修改密码</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="oldPassword">原密码</label>
+                        <input type="password" class="form-control" id="oldPassword" placeholder="请输入原密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="changePassword">新密码</label>
+                        <input type="password" class="form-control" id="changePassword" placeholder="请输入新密码">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="changePassword()">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="changeInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">修改个人资料</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="changeName">姓名</label>
+                        <input type="text" class="form-control" id="changeName" placeholder="请输入姓名">
+                    </div>
+                    <div class="form-group">
+                        <label for="changeLevel">职称</label>
+                        <input type="text" class="form-control" id="changeLevel" placeholder="请输入姓名">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="changeInfo()">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: "{:url('index/phones/stage')}",
+            success: function (data) {
+                let option = '';
+                data.data.forEach((value) => {
+                    option += `<option value="${value}">${value}</option>`
+                });
+                $('#stage').append(option)
+            }
+        })
+    });
+
+    function insert() {
+        $('#insertModal').modal('hide');
+        var phone = $("#phone").val();
+        var stage = $("#stage").val();
+        if (phone === '') {
+            toastr.options = {
+                positionClass: "toast-top-center",
+                timeOut: "1200",
+            };
+            toastr.error("请输入手机号!");
+            return;
+        }
+        $.ajax({
+            url: "{:url('index/phones/insertPhone')}",
+            data: {
+                phone: phone,
+                stage: stage
+            },
+            type: 'POST',
+            success: function (data) {
+                if (data.message == 'phone exist') {
+                    toastr.error("手机号已存在!");
+                } else {
+                    window.location.reload();
+                }
+            }
+        })
+    }
+
+    function changePassword() {
+        $('#changePasswordModal').modal('hide');
+        var oldPassword = $("#oldPassword").val();
+        var changePassword = $("#changePassword").val();
+        var phone = $("#doctorPhone")[0].innerText;
+        if (changePassword === '') {
+            toastr.error("密码不能为空!");
+            return;
+        }
+        $.ajax({
+            url: "{:url('index/admin/changePassword')}",
+            data: {
+                phone: phone,
+                oldPassword: oldPassword,
+                changePassword: changePassword
+            },
+            type: 'POST',
+            success: function (data) {
+                if (data.message == 'password error') {
+                    toastr.error("原密码错误!");
+                } else {
+                    window.location.href = '/index.php/index/index/loginUser';
+                }
+            }
+        })
+    }
+
+    function changeInfo() {
+        $('#changeInfoModal').modal('hide');
+        console.log($("#oldDocName").val())
+        var changeName = $("#changeName").val();
+        var changeLevel = $("#changeLevel").val();
+        var phone = $("#doctorPhone")[0].innerText;
+        $.ajax({
+            url: "{:url('index/admin/changeInfo')}",
+            data: {
+                phone: phone,
+                changeName: changeName,
+                changeLevel: changeLevel
+            },
+            type: 'POST',
+            success: function (data) {
+                window.location.reload();
+            }
+        })
+    }
+
+
+</script>
