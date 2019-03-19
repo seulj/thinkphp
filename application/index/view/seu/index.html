@@ -122,41 +122,6 @@
                         <div class="card card-weather">
                             <div class="card-body"
                                  style="background: url('http://disk.epihealth.cn/o_1d6a7l36nufb1dk41q019aak7oa.jpg') no-repeat center;background-size: cover;">
-                                <div class="weather-date-location">
-                                    <h3 style="color: #fff"><?php echo $weather['result'][0]['week']; ?></h3>
-                                    <p style="color: #fff" class="text-gray">
-                                        <span class="weather-date white"><?php echo $weather['result'][0]['days']; ?></span>
-                                        <span class="weather-location white"><?php echo $weather['result'][0]['citynm']; ?></span>
-                                    </p>
-                                </div>
-                                <div class="weather-data d-flex">
-                                    <div class="mr-auto">
-                                        <h4 style="color: #fff"
-                                            class="display-3 white"><?php echo $weather['result'][0]['temp_low']; ?>
-                                            <span class="symbol">&deg;</span>C
-                                            ~ <?php echo $weather['result'][0]['temp_high']; ?>
-                                            <span class="symbol">&deg;</span>C</h4>
-                                        <p style="color: #fff" class="white">
-                                            <?=$weather['result'][0]['weather']?>，<?=$weather['result'][0]['wind']?>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body p-0">
-                                <div class="d-flex weakly-weather">
-                                    <?php for ($i = 0; $i < 6; $i++) {?>
-                                    <div class="weakly-weather-item">
-                                        <p class="mb-0">
-                                            <?php echo $weather['result'][$i]['week']; ?>
-                                        </p>
-                                        <!-- <i class="mdi mdi-weather-cloudy"></i> -->
-                                        <p style="color:#999;margin-top:5px;"><?php echo $weather['result'][$i]['weather']; ?></p>
-                                        <p class="mb-0">
-                                            <?php echo $weather['result'][$i]['temperature']; ?>
-                                        </p>
-                                    </div>
-                                    <?php }?>
-                                </div>
                             </div>
                         </div>
                     </div>
