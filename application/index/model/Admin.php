@@ -13,7 +13,6 @@ class Admin
 {
     public function getUer($phone,$password)
     {
-        $password = encrypt($password);
         return db('user')->where(['phone' => $phone, 'password' => $password])->find();
     }
 
