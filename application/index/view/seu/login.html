@@ -1,4 +1,4 @@
-{include file="hospital/css" /}
+{include file="seu/css" /}
 <body>
 <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper auth-page">
@@ -47,11 +47,6 @@
                             </div>
                             <a href="#" class="text-small forgot-password text-black" onclick="message()">忘记密码</a>
                         </div>
-                        <!--<div class="text-block text-center my-3">-->
-                        <!--<span class="text-small font-weight-semibold">没有账号?</span>-->
-                        <!--<a href="tel:17551019302" class="text-black text-small">请联系您所在医院管理人员</a>-->
-                        <!--</div>-->
-
                     </div>
                     <ul class="auth-footer">
                         <li>
@@ -61,7 +56,7 @@
                             <a href="#" style="color: #fff">帮助</a>
                         </li>
                     </ul>
-                    <p class="footer-text text-center" style="color: #fff">copyright © 2018 上海惠誉医疗科技中心 版权所有</p>
+                    <p class="footer-text text-center" style="color: #fff">Copyright &copy; 2018 All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -126,7 +121,7 @@
             positionClass: "toast-top-center",
             timeOut: "1200",
         };
-        toastr.warning("请联系您所在医院管理人员!");
+        toastr.warning("请联系您管理人员!");
     }
 
     $('.btn-block').on('click', onSubmit)
