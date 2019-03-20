@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4896d1d5-fe2c-4252-9d99-cb2de425bd72" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/seu/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/20190319061004_create_table_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/20190319061004_create_table_user.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,14 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+      <file leaf-file-name="20190320095743_create_tabel_admin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/20190320095743_create_tabel_admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#38#56#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="303">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -66,7 +65,6 @@
         <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/application/index/view/index/seu/404.html" />
         <option value="$PROJECT_DIR$/application/index/view/seu/footer.html" />
-        <option value="$PROJECT_DIR$/database/migrations/20190319061004_create_table_user.php" />
         <option value="$PROJECT_DIR$/application/index/model/Admin.php" />
         <option value="$PROJECT_DIR$/application/database.php" />
         <option value="$PROJECT_DIR$/application/index/view/seu/model.html" />
@@ -77,6 +75,11 @@
         <option value="$PROJECT_DIR$/application/index/view/seu/navheader.html" />
         <option value="$PROJECT_DIR$/application/index/view/seu/navleft.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/User.php" />
+        <option value="$PROJECT_DIR$/application/index/model/User.php" />
+        <option value="$PROJECT_DIR$/application/index/view/seu/user.html" />
+        <option value="$PROJECT_DIR$/database/migrations/20190319061004_create_table_user.php" />
+        <option value="$PROJECT_DIR$/database/migrations/20190320095743_create_tabel_admin.php" />
       </list>
     </option>
   </component>
@@ -113,7 +116,7 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-queue" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="1" />
     <option name="width" value="1400" />
@@ -165,6 +168,13 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
@@ -248,12 +258,12 @@
       <workItem from="1552965218954" duration="8776000" />
       <workItem from="1552986760904" duration="4466000" />
       <workItem from="1553046158516" duration="8299000" />
-      <workItem from="1553071196963" duration="3122000" />
+      <workItem from="1553071196963" duration="4199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26091000" />
+    <option name="totallyTimeSpent" value="27168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -287,43 +297,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/index/view/seu/model.html" />
-    <entry file="file://$PROJECT_DIR$/application/index/view/seu/navheader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/seu/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="95" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="95" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#38#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/model/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3780">
@@ -478,13 +451,6 @@
         <state relative-caret-position="-87" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3780">
@@ -528,36 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/20190319061004_create_table_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/seu/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="106" column="40" lean-forward="true" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -568,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/seu/navleft.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/seu/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -582,13 +515,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5937">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/seu/navleft.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="-807">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
             <element signature="e#38#56#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/seu/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2916">
+          <caret line="106" column="40" lean-forward="true" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/seu/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="33" column="73" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/20190319061004_create_table_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+          <folding>
+            <element signature="e#121#139#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/20190320095743_create_tabel_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>

@@ -3,7 +3,7 @@
 use think\migration\Migrator;
 use think\migration\db\Column;
 
-class CreateTableUser extends Migrator
+class CreateTabelAdmin extends Migrator
 {
     /**
      * Change Method.
@@ -28,17 +28,16 @@ class CreateTableUser extends Migrator
      */
     public function up(){
         $this->down();
-        $this->table('user')
-            ->addColumn('openid', 'string')
-            ->addColumn('nickname', 'string')
-            ->addColumn('avatar_url', 'text')
+        $this->table('admin')
+            ->addColumn('phone', 'string', ['limit' => 11])
+            ->addColumn('password', 'string', ['limit' => 64])
             ->addTimestamps()
             ->create();
     }
 
     public function down(){
-        if($this->hasTable('user')) {
-            $this->dropTable('user');
+        if($this->hasTable('admin')) {
+            $this->dropTable('admin');
         }
     }
 }

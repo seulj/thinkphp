@@ -1,11 +1,11 @@
-{include file="hospital/css" /}
+{include file="seu/css" /}
 <body>
 <div class="container-scroller">
-    {include file="hospital/navheader" /}
+    {include file="seu/navheader" /}
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_sidebar.html -->
-        {include file="hospital/navleft" /}
+        {include file="seu/navleft" /}
         <!-- partial -->
         <div class="main-panel">
             <div class="content-wrapper">
@@ -23,8 +23,7 @@
                                         <tr>
                                             <!--<th>系统ID</th>-->
                                             <th>头像</th>
-                                            <th>手机号</th>
-                                            <th>姓名</th>
+                                            <th>openid</th>
                                             <th>微信昵称</th>
                                             <th>注册时间</th>
                                         </tr>
@@ -33,8 +32,7 @@
                                         {foreach $list as $vo}
                                         <tr>
                                             <td><img src="{$vo.avatar_url}"></td>
-                                            <td>{$vo.phone}</td>
-                                            <td>{$vo.name}</td>
+                                            <td>{$vo.openid}</td>
                                             <td>{$vo.nickname}</td>
                                             <td>{$vo.create_time}</td>
                                         </tr>
@@ -49,7 +47,7 @@
             </div>
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
-            {include file="hospital/footer" /}
+            {include file="seu/footer" /}
             <!-- partial -->
         </div>
         <!-- main-panel ends -->
@@ -57,7 +55,6 @@
     <!-- page-body-wrapper ends -->
 </div>
 <!-- container-scroller -->
-{include file="hospital/model" /}
 <!-- plugins:js -->
 <script src="/static/vendors/js/vendor.bundle.base.js"></script>
 <script src="/static/vendors/js/vendor.bundle.addons.js"></script>
@@ -80,7 +77,7 @@
             var windowHeight = $(this).height();
             if (scrollHeight - scrollTop - windowHeight < 0.5) {
                 $.ajax({
-                    url: "{:url('index/users/getList')}",
+                    url: "{:url('index/user/getList')}",
                     data: {
                         page: page
                     },
