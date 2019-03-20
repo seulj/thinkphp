@@ -20,8 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-success btn-block">
-                    <a href="http://www.seu.edu.cn/"></a>
+                <button class="btn btn-success btn-block" onclick="jump()">东大官网
                     <i class="mdi mdi-plus"></i>
                 </button>
             </div>
@@ -48,4 +47,8 @@
             $($('.left-nav')[i]).addClass('active')
         }
     })
+
+    function jump() {
+        window.location.href = 'http://www.seu.edu.cn/'
+    }
 </script>
