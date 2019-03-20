@@ -2,18 +2,6 @@
     .active{
         color: #308ee0;
     }
-    .user-left{
-        display: none;
-    }
-    .reply-left{
-        display: none;
-    }
-    .user-left.show{
-        display: block;
-    }
-    .reply-left.show{
-        display: block;
-    }
 </style>
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
@@ -36,13 +24,13 @@
                 <span class="menu-title">主页</span>
             </a>
         </li>
-        <li class="nav-item left-nav user-left" id="user-left">
+        <li class="nav-item left-nav" id="user-left">
             <a class="nav-link" href="{:url('users/indexUser')}">
                 <i class="menu-icon mdi mdi-account-multiple"></i>
                 <span class="menu-title">用户列表</span>
             </a>
         </li>
-        <li class="nav-item left-nav reply-left" id="reply-left">
+        <li class="nav-item left-nav" id="reply-left">
             <a class="nav-link" href="{:url('replys/indexUser')}">
                 <i class="menu-icon mdi mdi-tooltip-edit"></i>
                 <span class="menu-title">查看答案</span>
