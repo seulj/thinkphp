@@ -7,6 +7,11 @@
             <div class="row w-100">
                 <div class="col-lg-4 mx-auto">
                     <div class="auto-form-wrapper">
+                        <div class="text-center logo">
+                            <img class="logo-img" style="width: 100%" src="http://disk.epihealth.cn/o_1d6d5qn3lc401sn5rpsq97gq7a.png"
+                                 alt="">
+                        </div>
+                        <br>
                         <div class="form-group">
                             <label class="label">用户名</label>
                             <div class="input-group">
@@ -68,6 +73,13 @@
 <script src="/static/js/off-canvas.js"></script>
 <script src="/static/js/misc.js"></script>
 <script>
+    $(function($) {
+        $(window).resize(function() {
+            $('.logo-img').height($('.logo-img')[0].clientWidth * 0.19373)
+        });
+        $('.logo-img').height($('.logo-img')[0].clientWidth * 0.19373)
+    })
+
     if (window.localStorage.getItem('phone') && window.localStorage.getItem('password')) {
         $('#phone').val(window.localStorage.getItem('phone'))
         $('#password').val(window.localStorage.getItem('password'))
