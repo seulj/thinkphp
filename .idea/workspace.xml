@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4896d1d5-fe2c-4252-9d99-cb2de425bd72" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/application/index/view/seu/navheader.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/seu/navheader.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/view/seu/navleft.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/seu/navleft.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="navleft.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/index/view/seu/navleft.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="18" column="73" lean-forward="true" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -175,9 +174,9 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-queue" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="38" />
-    <option name="y" value="137" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-8" />
+    <option name="y" value="1" />
     <option name="width" value="1400" />
     <option name="height" value="851" />
   </component>
@@ -296,12 +295,12 @@
       <workItem from="1552961119888" duration="1428000" />
       <workItem from="1552965218954" duration="8776000" />
       <workItem from="1552986760904" duration="4466000" />
-      <workItem from="1553046158516" duration="2541000" />
+      <workItem from="1553046158516" duration="2666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17211000" />
+    <option name="totallyTimeSpent" value="17336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -652,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/seu/navleft.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="240">
+          <caret line="18" column="73" lean-forward="true" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
         </state>
       </provider>
     </entry>
