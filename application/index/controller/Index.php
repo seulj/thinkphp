@@ -1,6 +1,9 @@
 <?php
 namespace app\index\controller;
 use think\Session;
+use think\Url;
+
+url::root('/index.php');
 class Index extends \think\Controller
 {
     public function index()
