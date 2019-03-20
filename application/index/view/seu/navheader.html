@@ -1,24 +1,3 @@
-<style>
-    .checked {
-        background: rgba(255, 255, 255, 0.13);
-    }
-
-    .user-header {
-        display: none;
-    }
-
-    .reply-header {
-        display: none;
-    }
-
-    .user-header.show {
-        display: block;
-    }
-
-    .reply-header.show {
-        display: block;
-    }
-</style>
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
         <a class="navbar-brand brand-logo logo-width" href="{:url('index/index')}">
@@ -28,7 +7,6 @@
             <img src="" alt="logo"/>
         </a>
     </div>
-    <div id="power" style="display: none"></div>
     <div class="navbar-menu-wrapper d-flex align-items-center">
         <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item dropdown d-none d-xl-inline-block">
@@ -40,9 +18,6 @@
                          alt="Profile image">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-                    <a class="dropdown-item" data-toggle="modal" data-target="#changePasswordModal">
-                        修改密码
-                    </a>
                     <a href="{:url('index/doLogout')}" class="dropdown-item">
                         退出
                     </a>
@@ -55,14 +30,5 @@
         </button>
     </div>
 </nav>
-<script>
-    let urls = window.location.href.split('/')[window.location.href.split('/').length - 2] + '/' + window.location.href.split('/')[window.location.href.split('/').length - 1]
-    $('.head-nav').each(function (i, n) {
-        var current = $($('.head-nav')[i].children[0]).attr('href').split('/')[$($('.head-nav')[i].children[0]).attr('href').split('/').length - 2] + '/' + $($('.head-nav')[i].children[0]).attr('href').split('/')[$($('.head-nav')[i].children[0]).attr('href').split('/').length - 1]
-        if (current === urls) {
-            $($('.head-nav')[i]).addClass('checked')
-        }
-    })
-</script>
 
 

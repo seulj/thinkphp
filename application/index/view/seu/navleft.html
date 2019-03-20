@@ -28,21 +28,12 @@
                         <p id="oldDocName" class="profile-name">管理员</p>
                     </div>
                 </div>
-                <button class="btn btn-success btn-block" data-toggle="modal" data-target="#insertModal">新增权限
-                    <i class="mdi mdi-plus"></i>
-                </button>
             </div>
         </li>
         <li class="nav-item left-nav">
-            <a class="nav-link" href="{:url('index/indexUser')}">
+            <a class="nav-link" href="{:url('index/index')}">
                 <i class="menu-icon mdi mdi-television"></i>
                 <span class="menu-title">主页</span>
-            </a>
-        </li>
-        <li class="nav-item left-nav">
-            <a class="nav-link" href="{:url('phones/indexUser')}">
-                <i class="menu-icon mdi mdi-phone-settings"></i>
-                <span class="menu-title">权限设置</span>
             </a>
         </li>
         <li class="nav-item left-nav user-left" id="user-left">
@@ -66,7 +57,6 @@
     </ul>
 </nav>
 <script>
-    // console.log()
     let url = window.location.href.split('/')[window.location.href.split('/').length - 2] + '/' + window.location.href.split('/')[window.location.href.split('/').length - 1]
     $('.left-nav').each(function (i, n) {
         var current = $($('.left-nav')[i].children[0]).attr('href').split('/')[$($('.left-nav')[i].children[0]).attr('href').split('/').length - 2] + '/' + $($('.left-nav')[i].children[0]).attr('href').split('/')[$($('.left-nav')[i].children[0]).attr('href').split('/').length - 1]
