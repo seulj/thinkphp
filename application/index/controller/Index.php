@@ -5,6 +5,11 @@ class Index
 {
     public function index()
     {
+        $result = Session::has('phone');
+        if (!$result) {
+            $this->redirect("index/login");
+            exit();
+        }
         return view('seu/index');
     }
 
