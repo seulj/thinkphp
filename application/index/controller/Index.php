@@ -33,4 +33,10 @@ class Index extends \think\Controller
             return json(['ret' => 0, 'message' => 'failed']);
         }
     }
+
+    public function doLogout()
+    {
+        Session::delete('phone');
+        $this->redirect("index/login");
+    }
 }
