@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4896d1d5-fe2c-4252-9d99-cb2de425bd72" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/seu/css.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/seu/css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/answers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/details.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/view/seu/navleft.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/seu/navleft.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/phone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/searchAnswers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/searchPhone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/searchReports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/unfinished.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +45,8 @@
       <file leaf-file-name="navleft.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/index/view/seu/navleft.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="840">
+              <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -188,7 +194,7 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-queue" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="23" />
     <option name="y" value="13" />
     <option name="width" value="1400" />
@@ -309,12 +315,12 @@
       <workItem from="1552961119888" duration="1428000" />
       <workItem from="1552965218954" duration="8776000" />
       <workItem from="1552986760904" duration="4466000" />
-      <workItem from="1553046158516" duration="1840000" />
+      <workItem from="1553046158516" duration="1927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16510000" />
+    <option name="totallyTimeSpent" value="16597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -662,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/seu/navleft.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="840">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
         </state>
       </provider>
     </entry>
