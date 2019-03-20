@@ -13,7 +13,7 @@ class Admin
 {
     public function getUer($phone,$password)
     {
-        return db('user')->where(['phone' => $phone, 'password' => $password])->find();
+        return db('admin')->where(['phone' => $phone, 'password' => $password])->find();
     }
 
 }
