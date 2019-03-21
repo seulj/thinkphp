@@ -182,6 +182,11 @@
                 },
                 type: 'POST',
                 success: function (data) {
+                    toastr.options = {
+                        positionClass: "toast-top-center",
+                        timeOut: "1200",
+                    };
+                    toastr.success("删除成功!");
                     window.location.reload();
                 }
             })
@@ -202,7 +207,11 @@
             },
             type: 'POST',
             success: function (data) {
-                console.log(data)
+                toastr.options = {
+                    positionClass: "toast-top-center",
+                    timeOut: "1200",
+                };
+                toastr.success("添加成功!");
                 window.location.reload();
             }
         })
@@ -223,6 +232,11 @@
             },
             type: 'POST',
             success: function (data) {
+                toastr.options = {
+                    positionClass: "toast-top-center",
+                    timeOut: "1200",
+                };
+                toastr.success("更改成功!");
                 window.location.reload();
             },
         })
