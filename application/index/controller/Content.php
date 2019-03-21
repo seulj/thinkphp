@@ -12,6 +12,7 @@ use think\Session;
 use think\Url;
 
 url::root('/index.php');
+
 class Content extends \think\Controller
 {
     public function __construct()
@@ -31,9 +32,9 @@ class Content extends \think\Controller
         $limit = config('paginate')['list_rows'];
         $data['list'] = model('content')->getByPage($page, $limit);
         $data['page'] = model('content')->getPage();
-        if ($data['list']){
+        if ($data['list']) {
             return json(['ret' => 1, 'data' => $data]);
-        }else
+        } else
             return json(['ret' => 0, 'data' => 'end']);
 
     }
@@ -57,6 +58,46 @@ class Content extends \think\Controller
             $data['next_page'] = $page;
         }
         return view('seu/content', $data);
+    }
+
+    public function getContent()
+    {
+        $id = input('get.id');
+        $result = model('content')->getContent($id);
+        if ($result) {
+            $title = $result['title'];
+            $image = $result['image'];
+            $article = $result['article'];
+            return json(['ret' => 1, 'message' => ['title' => $title, 'image' => $image, 'article' => $article]]);
+        } else {
+            return json(['ret' => 0, 'message' => 'get failed']);
+        }
+    }
+
+    public function deleteContent()
+    {
+        $id = input('post.id');
+        $result = model('content')->deleteContent($id);
+        if ($result) {
+            return json(['ret' => 1, 'message' => 'delete success']);
+        } else {
+            return json(['ret' => 0, 'message' => 'delete failed']);
+        }
+    }
+
+    public function editContent()
+    {
+        $id = input('post.id');
+        $params['title'] = input('post.title');
+        $params['image'] = input('post.image');
+        $params['article'] = input('post.article');
+
+        $result = model('content')->editContent($id, $params);
+        if ($result) {
+            return json(['ret' => 1, 'message' => 'update success']);
+        } else {
+            return json(['ret' => 0, 'message' => 'update failed']);
+        }
     }
 
 }

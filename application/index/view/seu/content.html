@@ -21,6 +21,7 @@
                                             <th>ID</th>
                                             <th>标题</th>
                                             <th>更新时间</th>
+                                            <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -29,12 +30,55 @@
                                             <td>{$vo.id}</td>
                                             <td>{$vo.title}</td>
                                             <td>{$vo.update_time}</td>
+                                            <td>
+                                                <button type="button" class="edit btn btn-rounded btn-sm"
+                                                        onclick="showModal('{$vo.id}')">编辑
+                                                </button>
+                                                <button type="button" class="delete btn btn-danger btn-rounded btn-sm">
+                                                    删除
+                                                </button>
+                                            </td>
                                         </tr>
                                         {/foreach}
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">编辑</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="forms-sample">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label>标题：</label>
+                                        <input class="form-control" id="editTitle"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>图片：</label>
+                                        <input class="form-control" id="editImage"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>正文：</label>
+                                        <input class="form-control" id="editArticle"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" onclick="change()">提交</button>
                         </div>
                     </div>
                 </div>
@@ -63,6 +107,60 @@
 <script src="/static/js/dashboard.js"></script>
 <!-- End custom js for this page-->
 <script>
+    var contentId = 0;
+    function showModal(id) {
+        contentId = id;
+        $.ajax({
+            url: "{:url('index/content/getContent')}",
+            type: 'GET',
+            data: {
+                id: id
+            },
+            success: function (response) {
+                $("#editTitle ").val(response.message.title);
+                $("#editImage ").val(response.message.image);
+                $("#editArticle ").val(response.message.article);
+            }
+        });
+        $('#editModal').modal('show');
+    }
+
+    $(document).ready(function () {
+        $("body").on('click', '.delete', function () {
+            var id = +$(this).parent().parent().children()[0].innerHTML;
+            $.ajax({
+                url: "{:url('index/content/deleteContent')}",
+                data: {
+                    id: id
+                },
+                type: 'POST',
+                success: function (data) {
+                    window.location.reload();
+                }
+            })
+        });
+    });
+
+    function change() {
+        $('#editModal').modal('hide');
+        var title = $("#editTitle").val();
+        var image = $("#editImage").val();
+        var article = $("#editArticle").val();
+        $.ajax({
+            url: "{:url('index/content/editContent')}",
+            data: {
+                id: contentId,
+                title: title,
+                image: image,
+                article: article
+            },
+            type: 'POST',
+            success: function (data) {
+                window.location.reload();
+            },
+        })
+    }
+
     var page = 2;
     $(document).ready(function () {
         $(window).scroll(function () {
@@ -77,12 +175,12 @@
                     },
                     type: 'POST',
                     success: function (data) {
-                        if (data.ret === 0){
+                        if (data.ret === 0) {
                             return
                         }
                         var string = String
                         data.data.list.forEach(val => {
-                            string += '<tr><td>'+val.id+'</td><td>'+val.title+'</td><td>'+val.update_time+'</td></tr>'
+                            string += '<tr><td>' + val.id + '</td><td>' + val.title + '</td><td>' + val.update_time + '</td><td><button type="button" class="edit btn btn-rounded btn-sm" onclick="showModal(' + val.id + ')">编辑</button><button type="button" class="delete btn btn-danger btn-rounded btn-sm">删除</button></td></tr>'
                         });
                         $("tbody").append(string)
                         page = page + 1

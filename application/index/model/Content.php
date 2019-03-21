@@ -23,4 +23,19 @@ class Content
         $page = ceil($query / config('paginate')['list_rows']);
         return $page;
     }
+
+    public function getContent($id)
+    {
+        return db('content')->where('id', $id)->find();
+    }
+
+    public function deleteContent($id)
+    {
+        return db('content')->where('id', $id)->delete();
+    }
+
+    public function editContent($id, $params)
+    {
+        return db('content')->where('id', $id)->update($params);
+    }
 }
