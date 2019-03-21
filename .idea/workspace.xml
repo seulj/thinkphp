@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4896d1d5-fe2c-4252-9d99-cb2de425bd72" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/application/api/controller/Article.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/model/Article.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/seu/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/seu/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/seu/content.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,20 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="content.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/index/view/seu/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/index/view/seu/user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+            <state relative-caret-position="180">
+              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -105,8 +94,8 @@
         <option value="$PROJECT_DIR$/application/index/controller/Content.php" />
         <option value="$PROJECT_DIR$/application/index/model/Content.php" />
         <option value="$PROJECT_DIR$/database/migrations/20190321065400_create_tabel_content.php" />
-        <option value="$PROJECT_DIR$/application/index/view/seu/content.html" />
         <option value="$PROJECT_DIR$/application/index/view/seu/user.html" />
+        <option value="$PROJECT_DIR$/application/index/view/seu/content.html" />
       </list>
     </option>
   </component>
@@ -292,12 +281,12 @@
       <workItem from="1552965218954" duration="8776000" />
       <workItem from="1552986760904" duration="4466000" />
       <workItem from="1553046158516" duration="8299000" />
-      <workItem from="1553071196963" duration="9711000" />
+      <workItem from="1553071196963" duration="9772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32680000" />
+    <option name="totallyTimeSpent" value="32741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -608,6 +597,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/seu/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="753">
@@ -620,15 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/seu/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/seu/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+        <state relative-caret-position="180">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
         </state>
       </provider>
     </entry>
