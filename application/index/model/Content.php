@@ -13,7 +13,7 @@ class Content
 {
     public function getByPage($page, $limit)
     {
-        $query = db('content')->page($page, $limit)->order('id desc')->select();
+        $query = db('content')->page($page, $limit)->select();
         return $query;
     }
 

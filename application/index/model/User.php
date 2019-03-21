@@ -13,7 +13,7 @@ class User
 {
     public function getByPage($page, $limit)
     {
-        $query = db('user')->page($page, $limit)->order('id desc')->select();
+        $query = db('user')->page($page, $limit)->select();
         return $query;
     }
 
