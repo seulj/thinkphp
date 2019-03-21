@@ -33,7 +33,7 @@
                                         <tr>
                                             <td>{$vo.id}</td>
                                             <td>{$vo.title}</td>
-                                            <td><img src="{$vo.image}"></td>
+                                            <td><img style="border-radius:0" src="{$vo.image}"></td>
                                             <td>{$vo.create_time}</td>
                                             <td>
                                                 <button type="button" class="edit btn btn-rounded btn-sm"
@@ -148,6 +148,7 @@
 <!-- End custom js for this page-->
 <script>
     var contentId = 0;
+
     function showEditModal(id) {
         contentId = id;
         $.ajax({
@@ -168,6 +169,7 @@
     function showAddModal() {
         $('#addModal').modal('show');
     }
+
     $(document).ready(function () {
         $("body").on('click', '.delete', function () {
             var id = +$(this).parent().parent().children()[0].innerHTML;
@@ -183,7 +185,7 @@
             })
         });
     });
-    
+
     function submit() {
         $('#addModal').modal('hide');
         var title = $("#addTitle").val();
