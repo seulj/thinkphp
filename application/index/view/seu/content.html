@@ -32,7 +32,7 @@
                                         <tr>
                                             <td>{$vo.id}</td>
                                             <td>{$vo.title}</td>
-                                            <td>{$vo.update_time}</td>
+                                            <td>{$vo.create_time}</td>
                                             <td>
                                                 <button type="button" class="edit btn btn-rounded btn-sm"
                                                         onclick="showEditModal('{$vo.id}')">编辑
@@ -241,7 +241,7 @@
                         }
                         var string = String
                         data.data.list.forEach(val => {
-                            string += '<tr><td>' + val.id + '</td><td>' + val.title + '</td><td>' + val.update_time + '</td><td><button type="button" class="edit btn btn-rounded btn-sm" onclick="showModal(' + val.id + ')">编辑</button><button type="button" class="delete btn btn-danger btn-rounded btn-sm">删除</button></td></tr>'
+                            string += '<tr><td>' + val.id + '</td><td>' + val.title + '</td><td>' + val.create_time + '</td><td><button type="button" class="edit btn btn-rounded btn-sm" onclick="showModal(' + val.id + ')">编辑</button><button type="button" class="delete btn btn-danger btn-rounded btn-sm">删除</button></td></tr>'
                         });
                         $("tbody").append(string)
                         page = page + 1
