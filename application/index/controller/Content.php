@@ -100,4 +100,18 @@ class Content extends \think\Controller
         }
     }
 
+    public function insertContent()
+    {
+        $params['title'] = input('post.title');
+        $params['image'] = input('post.image');
+        $params['article'] = input('post.article');
+        $result = model('content')->insertContent($params);
+        if ($result) {
+            return json(['ret' => 1, 'message' => 'insert success']);
+        } else {
+            return json(['ret' => 0, 'message' => 'insert failed']);
+        }
+
+    }
+
 }

@@ -38,4 +38,9 @@ class Content
     {
         return db('content')->where('id', $id)->update($params);
     }
+
+    public function insertContent($params)
+    {
+        return db('content')->insert($params);
+    }
 }
