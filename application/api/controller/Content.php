@@ -2,14 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: Jamin
- * Date: 2019/3/19
- * Time: 11:36
+ * Date: 2019/3/21
+ * Time: 15:01
  */
 
 namespace app\api\controller;
 
 
-class Article
+class Content
 {
 
 }

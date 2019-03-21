@@ -13,7 +13,7 @@
                     <div class="col-lg-12 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">用户列表</h4>
+                                <h4 class="card-title">文章列表</h4>
                                 <p class="card-description">
                                     用户信息不可删除和修改，如需帮助，请联系我们
                                 </p>
@@ -22,20 +22,16 @@
                                         <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>头像</th>
-                                            <th>openid</th>
-                                            <th>微信昵称</th>
-                                            <th>注册时间</th>
+                                            <th>标题</th>
+                                            <th>更新时间</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         {foreach $list as $vo}
                                         <tr>
                                             <td>{$vo.id}</td>
-                                            <td><img src="{$vo.avatar_url}"></td>
-                                            <td>{$vo.openid}</td>
-                                            <td>{$vo.nickname}</td>
-                                            <td>{$vo.create_time}</td>
+                                            <td>{$vo.title}</td>
+                                            <td>{$vo.update_time}</td>
                                         </tr>
                                         {/foreach}
                                         </tbody>
@@ -78,20 +74,20 @@
             var windowHeight = $(this).height();
             if (scrollHeight - scrollTop - windowHeight < 0.5) {
                 $.ajax({
-                    url: "{:url('index/user/getList')}",
+                    url: "{:url('index/content/getList')}",
                     data: {
                         page: page
                     },
                     type: 'POST',
                     success: function (data) {
-                       if (data.ret === 0){
-                           return
-                       }
-                       var string = String
-                       data.data.list.forEach(val => {
-                           string += '<tr><td>'+val.id+'</td><td><img src="'+val.avatar_url+'"></td><td>'+val.phone+'</td><td>'+val.name+'</td><td>'+val.nickname+'</td><td>'+val.create_time+'</td></tr>'
-                       });
-                       $("tbody").append(string)
+                        if (data.ret === 0){
+                            return
+                        }
+                        var string = String
+                        data.data.list.forEach(val => {
+                            string += '<tr><td>'+val.id+'</td><td>'+val.title+'</td><td>'+val.update_time+'</td></tr>'
+                        });
+                        $("tbody").append(string)
                         page = page + 1
                     },
                 });
