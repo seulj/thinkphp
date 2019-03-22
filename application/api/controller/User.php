@@ -2,7 +2,6 @@
 
 namespace app\api\controller;
 
-
 class User
 {
     public function __construct()
