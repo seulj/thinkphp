@@ -239,8 +239,8 @@ return [
         'list_rows' => 15,
     ],
     'weChat' => [
-        'appid' => '',
-        'secret' => '',
+        'appid' => 'wx8287ab44bf4a7b73',
+        'secret' => '5b74f9fe60a0f6fc54d5be98b15e6b33',
         'grant_type' => 'authorization_code',
     ],
     'http_exception_template'    =>  [
