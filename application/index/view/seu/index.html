@@ -1,5 +1,13 @@
 {include file="seu/css" /}
-<body>
+<style>
+    .purchace-popup{
+        display:none;
+    }
+    .purchace-popup.hide{
+        display: block;
+    }
+</style>
+<body onload="startTime()">
 <div class="container-scroller">
     {include file="seu/navheader" /}
     <!-- partial -->
@@ -8,8 +16,114 @@
         {include file="seu/navleft" /}
         <!-- partial -->
         <div class="main-panel">
-            <div class="content-wrapper d-flex align-items-center auth auth-bg-1 theme-one"
-                 style="background: url('http://disk.epihealth.cn/o_1d6a7l36nufb1dk41q019aak7oa.jpg');background-size: cover;">
+            <div class="content-wrapper">
+                <div class="row purchace-popup">
+                    <div class="col-12">
+              <span class="d-block d-md-flex align-items-center">
+                <p>小程序后台欢迎您的使用！今天是</p><div id="txt"></div>
+                <a class="btn ml-auto download-button d-none d-md-block" onclick="closeMsg()">忽略消息</a>
+                  <!--&lt;!&ndash; <a class="btn purchase-button mt-4 mt-md-0" href="https://www.bootstrapdash.com/product/star-admin-pro/"-->
+                  <!--target="_blank">Upgrade To Pro</a> &ndash;&gt;-->
+                <i class="mdi mdi-close popup-dismiss d-none d-md-block"></i>
+              </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                        <div class="card card-statistics">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <div class="float-left">
+                                        <i class="mdi mdi-cube text-danger icon-lg"></i>
+                                    </div>
+                                    <div class="float-right">
+                                        <p class="mb-0 text-right">累计收入</p>
+                                        <div class="fluid-container">
+                                            <h3 class="font-weight-medium text-right mb-0">￥00.00</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3 mb-0">
+                                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> 未开通的功能
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                        <div class="card card-statistics">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <div class="float-left">
+                                        <i class="mdi mdi-cube text-danger icon-lg"></i>
+                                    </div>
+                                    <div class="float-right">
+                                        <p class="mb-0 text-right">累计回答</p>
+                                        <div class="fluid-container">
+                                            <h3 class="font-weight-medium text-right mb-0">0</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3 mb-0">
+                                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> 未开通的功能
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                        <div class="card card-statistics">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <div class="float-left">
+                                        <i class="mdi mdi-account-multiple text-warning icon-lg"></i>
+                                    </div>
+                                    <div class="float-right">
+                                        <p class="mb-0 text-right">累计用户</p>
+                                        <div class="fluid-container">
+                                            <h3 class="font-weight-medium text-right mb-0">{:$users_count}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3 mb-0">
+                                    <a href="{:url('index/user/index')}">
+                                        <i class="mdi mdi-checkbox-marked-outline mr-1" aria-hidden="true"></i> 查看详细
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                        <div class="card card-statistics">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <div class="float-left">
+                                        <i class="mdi mdi-file-pdf text-success icon-lg"></i>
+                                    </div>
+                                    <div class="float-right">
+                                        <p class="mb-0 text-right">累计文章</p>
+                                        <div class="fluid-container">
+                                            <h3 class="font-weight-medium text-right mb-0">{:$contents_count}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3 mb-0">
+                                    <a href="{:url('index/content/index')}">
+                                        <i class="mdi mdi-checkbox-marked-outline mr-1" aria-hidden="true"></i> 查看详细
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 grid-margin stretch-card">
+                        <!--weather card-->
+                        <div class="card card-weather">
+                            <div class="card-body"
+                                 style="background: url('http://disk.epihealth.cn/o_1d6a7l36nufb1dk41q019aak7oa.jpg') no-repeat center;background-size: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
@@ -21,7 +135,6 @@
     <!-- page-body-wrapper ends -->
 </div>
 <!-- container-scroller -->
-<!-- Modal -->
 <!-- plugins:js -->
 <script src="/static/vendors/js/vendor.bundle.base.js"></script>
 <script src="/static/vendors/js/vendor.bundle.addons.js"></script>
@@ -34,6 +147,25 @@
 <!-- endinject -->
 <!-- Custom js for this page-->
 <script src="/static/js/dashboard.js"></script>
+<script>
+    function startTime() {
+        var today = new Date();
+        var y = today.getFullYear();
+        var m = today.getMonth();
+        var d = today.getDate();
+        document.getElementById('txt').innerHTML = y + "年" + (m + 1) + "月" + d + "日";
+        t = setTimeout(function () {
+            startTime()
+        }, 500);
+    }
+
+    function closeMsg() {
+        var time = $('#txt').html();
+        localStorage.setItem("time",time);
+        $(".purchace-popup").slideToggle();
+    }
+
+</script>
 <!-- End custom js for this page-->
 </body>
 
