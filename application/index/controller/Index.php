@@ -1,9 +1,12 @@
 <?php
+
 namespace app\index\controller;
+
 use think\Session;
 use think\Url;
 
 url::root('/index.php');
+
 class Index extends \think\Controller
 {
     public function index()
@@ -13,7 +16,9 @@ class Index extends \think\Controller
             $this->redirect("index/login");
             exit();
         }
-        return view('seu/index');
+        $data['users_count'] = model('user')->getCount();
+        $data['contents_count'] = model('content')->getCount();
+        return view('seu/index', $data);
     }
 
     public function login()

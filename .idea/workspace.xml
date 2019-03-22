@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4896d1d5-fe2c-4252-9d99-cb2de425bd72" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/application/index/view/seu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/seu/index.html" afterDir="false" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +20,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
+=======
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/view/seu/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="129" column="38" lean-forward="true" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Content.php" pinned="false" current-in-tab="false">
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
         <entry file="file://$PROJECT_DIR$/application/index/controller/Content.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -31,10 +66,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/view/seu/login.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="112" column="46" selection-start-line="108" selection-start-column="20" selection-end-line="112" selection-end-column="46" />
+=======
+            <state relative-caret-position="150">
+              <caret line="5" column="95" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="95" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -42,11 +81,22 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/model/Content.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+=======
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+              <folding>
+                <element signature="e#38#56#0#PHP" expanded="true" />
+              </folding>
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
             </state>
           </provider>
         </entry>
@@ -54,12 +104,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/model/User.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+=======
+            <state relative-caret-position="333">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/view/seu/content.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,6 +151,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+=======
+      <file leaf-file-name="Content.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/index/model/Content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
             </state>
           </provider>
         </entry>
@@ -123,6 +186,7 @@
       <find>reply-left</find>
       <find>text-muted</find>
       <find>user-left</find>
+      <find>http</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,12 +203,9 @@
         <option value="$PROJECT_DIR$/application/index/view/seu/footer.html" />
         <option value="$PROJECT_DIR$/application/database.php" />
         <option value="$PROJECT_DIR$/application/index/view/seu/model.html" />
-        <option value="$PROJECT_DIR$/application/index/view/seu/index.html" />
-        <option value="$PROJECT_DIR$/application/index/view/seu/css.html" />
         <option value="$PROJECT_DIR$/application/api/controller/User.php" />
         <option value="$PROJECT_DIR$/application/index/view/seu/login.html" />
         <option value="$PROJECT_DIR$/application/index/view/seu/navheader.html" />
-        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/index/controller/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/20190319061004_create_table_user.php" />
         <option value="$PROJECT_DIR$/database/migrations/20190320095743_create_tabel_admin.php" />
@@ -154,10 +215,17 @@
         <option value="$PROJECT_DIR$/database/migrations/20190321065400_create_tabel_content.php" />
         <option value="$PROJECT_DIR$/application/index/view/seu/user.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Content.php" />
-        <option value="$PROJECT_DIR$/application/index/model/Content.php" />
-        <option value="$PROJECT_DIR$/application/index/model/User.php" />
         <option value="$PROJECT_DIR$/application/index/view/seu/content.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/application/config.php" />
+=======
+        <option value="$PROJECT_DIR$/public/static/vendors/js/vendor.bundle.addons.js" />
+        <option value="$PROJECT_DIR$/application/index/view/seu/css.html" />
+        <option value="$PROJECT_DIR$/application/index/model/User.php" />
+        <option value="$PROJECT_DIR$/application/index/model/Content.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/index/view/seu/index.html" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
       </list>
     </option>
   </component>
@@ -216,6 +284,68 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="seu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SEU-LAW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SEU-LAW" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
           </expand>
           <select />
         </subPane>
@@ -268,19 +398,40 @@
       <workItem from="1552965218954" duration="8776000" />
       <workItem from="1552986760904" duration="4466000" />
       <workItem from="1553046158516" duration="8299000" />
+<<<<<<< HEAD
       <workItem from="1553071196963" duration="14926000" />
       <workItem from="1553234678336" duration="279000" />
+=======
+      <workItem from="1553071196963" duration="18709000" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="38174000" />
+=======
+    <option name="totallyTimeSpent" value="41678000" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
+=======
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3175034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18839541" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,6 +456,59 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/model/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="87" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/20190319061004_create_table_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/seu/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/model/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
     <entry file="file://$PROJECT_DIR$/application/api/model/User.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -366,13 +570,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/seu/model.html" />
-    <entry file="file://$PROJECT_DIR$/application/index/view/seu/css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/seu/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -391,13 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="20" column="50" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/seu/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -422,6 +612,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-330">
@@ -433,6 +624,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Article.php" />
+=======
+    <entry file="file://$PROJECT_DIR$/application/api/controller/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="39" column="46" lean-forward="true" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
     <entry file="file://$PROJECT_DIR$/application/api/controller/Content.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -477,6 +684,52 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/application/index/view/seu/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/vendors/js/vendor.bundle.addons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="19" column="17708" lean-forward="true" selection-start-line="19" selection-start-column="17708" selection-end-line="19" selection-end-column="17708" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/seu/css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/seu/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6960">
+          <caret line="238" column="34" selection-start-line="238" selection-start-column="34" selection-end-line="238" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="e#3039#3046#1" expanded="true" />
+            <element signature="e#5450#5457#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
     <entry file="file://$PROJECT_DIR$/application/index/controller/Content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -489,25 +742,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/seu/login.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret line="112" column="46" selection-start-line="108" selection-start-column="20" selection-end-line="112" selection-end-column="46" />
+=======
+        <state relative-caret-position="150">
+          <caret line="5" column="95" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="95" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/model/Content.php">
+    <entry file="file://$PROJECT_DIR$/application/index/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="333">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/model/User.php">
+    <entry file="file://$PROJECT_DIR$/application/index/model/Content.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state>
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+=======
+        <state relative-caret-position="303">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
@@ -517,15 +787,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+=======
+        <state relative-caret-position="333">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="e#38#56#0#PHP" expanded="true" />
+          </folding>
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/seu/content.html">
+    <entry file="file://$PROJECT_DIR$/application/index/view/seu/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="865">
           <caret line="205" column="33" selection-start-line="205" selection-start-column="33" selection-end-line="205" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+=======
+        <state relative-caret-position="333">
+          <caret line="129" column="38" lean-forward="true" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+>>>>>>> 244c7cf1be6b11fd4288760bba2d0c42ce380650
           </folding>
         </state>
       </provider>

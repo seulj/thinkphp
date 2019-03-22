@@ -24,4 +24,9 @@ class User
         return $page;
     }
 
+    public function getCount()
+    {
+        return db('user')->count();
+    }
+
 }

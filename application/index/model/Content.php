@@ -43,4 +43,9 @@ class Content
     {
         return db('content')->insert($params);
     }
+
+    public function getCount()
+    {
+        return db('content')->count();
+    }
 }
