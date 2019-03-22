@@ -7,7 +7,7 @@ class User
 {
     public function __construct()
     {
-        setCross();
+        header('Access-Control-Allow-Origin: *');
     }
 
     public function getOpenid()
