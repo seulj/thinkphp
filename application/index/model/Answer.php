@@ -11,5 +11,22 @@ namespace app\index\model;
 
 class Answer
 {
+    public function getByPage($page, $limit)
+    {
+        $query = db('answer')->page($page, $limit)->select();
+        return $query;
+    }
+
+    public function getPage()
+    {
+        $query = db('answer')->count();
+        $page = ceil($query / config('paginate')['list_rows']);
+        return $page;
+    }
+
+    public function getContent($id)
+    {
+        return db('answer')->where('id', $id)->find();
+    }
 
 }

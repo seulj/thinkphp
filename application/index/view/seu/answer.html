@@ -36,10 +36,7 @@
                                             <td>{$vo.create_time}</td>
                                             <td>
                                                 <button type="button" class="edit btn btn-rounded btn-sm"
-                                                        onclick="showEditModal('{$vo.id}')">编辑
-                                                </button>
-                                                <button type="button" class="delete btn btn-danger btn-rounded btn-sm">
-                                                    删除
+                                                        onclick="showEditModal('{$vo.id}')">查看
                                                 </button>
                                             </td>
                                         </tr>
@@ -77,22 +74,6 @@
 <!-- End custom js for this page-->
 <script>
 
-    $(document).ready(function () {
-        $("body").on('click', '.delete', function () {
-            var id = +$(this).parent().parent().children()[0].innerHTML;
-            $.ajax({
-                url: "{:url('index/content/deleteContent')}",
-                data: {
-                    id: id
-                },
-                type: 'POST',
-                success: function (data) {
-                    window.location.reload();
-                }
-            })
-        });
-    });
-
     var page = 2;
     $(document).ready(function () {
         $(window).scroll(function () {
@@ -112,7 +93,7 @@
                         }
                         var string = String
                         data.data.list.forEach(val => {
-                            string += '<tr><td>' + val.id + '</td><td>' + val.title + '</td><td>' + val.create_time + '</td><td><button type="button" class="edit btn btn-rounded btn-sm" onclick="showModal(' + val.id + ')">编辑</button><button type="button" class="delete btn btn-danger btn-rounded btn-sm">删除</button></td></tr>'
+                            string += '<tr><td>' + val.id + '</td><td>' + val.title + '</td><td>' + val.create_time + '</td><td><button type="button" class="edit btn btn-rounded btn-sm" onclick="showModal(' + val.id + ')">编辑</button></td></tr>'
                         });
                         $("tbody").append(string)
                         page = page + 1
