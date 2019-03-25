@@ -4,20 +4,72 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57513f5dbb6f43960ca2e4899015c52d",
+    "content-hash": "d1cf290759a640f0d4640c2a351e225d",
     "packages": [
         {
-            "name": "topthink/framework",
-            "version": "v5.0.21",
+            "name": "firebase/php-jwt",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/top-think/framework.git",
-                "reference": "ab826da071a7a47116a7f1d01f72228d6bcf212a"
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/top-think/framework/zipball/ab826da071a7a47116a7f1d01f72228d6bcf212a",
-                "reference": "ab826da071a7a47116a7f1d01f72228d6bcf212a",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": " 4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "time": "2017-06-27T22:17:23+00:00"
+        },
+        {
+            "name": "topthink/framework",
+            "version": "v5.0.24",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/top-think/framework.git",
+                "reference": "c255c22b2f5fa30f320ecf6c1d29f7740eb3e8be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/top-think/framework/zipball/c255c22b2f5fa30f320ecf6c1d29f7740eb3e8be",
+                "reference": "c255c22b2f5fa30f320ecf6c1d29f7740eb3e8be",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -61,20 +113,20 @@
                 "orm",
                 "thinkphp"
             ],
-            "time": "2018-09-04T09:18:48+00:00"
+            "time": "2019-01-11T08:04:58+00:00"
         },
         {
             "name": "topthink/think-captcha",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/think-captcha.git",
-                "reference": "0c55455df26a1626a60d0dc35d2d89002b741d44"
+                "reference": "1d64363c814c92f6086c4fa5e3223fe7e23db09d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/top-think/think-captcha/zipball/0c55455df26a1626a60d0dc35d2d89002b741d44",
-                "reference": "0c55455df26a1626a60d0dc35d2d89002b741d44",
+                "url": "https://api.github.com/repos/top-think/think-captcha/zipball/1d64363c814c92f6086c4fa5e3223fe7e23db09d",
+                "reference": "1d64363c814c92f6086c4fa5e3223fe7e23db09d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -82,6 +134,10 @@
                         "preferred": true
                     }
                 ]
+            },
+            "require": {
+                "topthink/framework": "~5.0.0",
+                "topthink/think-installer": ">=1.0.10"
             },
             "type": "library",
             "autoload": {
@@ -103,20 +159,20 @@
                 }
             ],
             "description": "captcha package for thinkphp5",
-            "time": "2016-07-06T01:47:11+00:00"
+            "time": "2019-01-28T04:48:36+00:00"
         },
         {
             "name": "topthink/think-helper",
-            "version": "v1.0.6",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/think-helper.git",
-                "reference": "0c99dc625b0d2d4124e1b6ca15a3ad6f0125963f"
+                "reference": "8ba5f66e68106369fcc3211e7d2dbaf7bc9ce455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/top-think/think-helper/zipball/0c99dc625b0d2d4124e1b6ca15a3ad6f0125963f",
-                "reference": "0c99dc625b0d2d4124e1b6ca15a3ad6f0125963f",
+                "url": "https://api.github.com/repos/top-think/think-helper/zipball/8ba5f66e68106369fcc3211e7d2dbaf7bc9ce455",
+                "reference": "8ba5f66e68106369fcc3211e7d2dbaf7bc9ce455",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -145,7 +201,7 @@
                 }
             ],
             "description": "The ThinkPHP5 Helper Package",
-            "time": "2017-04-05T07:15:37+00:00"
+            "time": "2019-03-14T09:28:59+00:00"
         },
         {
             "name": "topthink/think-image",
@@ -370,16 +426,16 @@
         },
         {
             "name": "topthink/think-queue",
-            "version": "v1.1.5",
+            "version": "v1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/think-queue.git",
-                "reference": "465320c9cb7811df22d4ff8f29f58ead7d104348"
+                "reference": "250650eb0e8ea5af4cfdc7ae46f3f4e0a24ac245"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/top-think/think-queue/zipball/465320c9cb7811df22d4ff8f29f58ead7d104348",
-                "reference": "465320c9cb7811df22d4ff8f29f58ead7d104348",
+                "url": "https://api.github.com/repos/top-think/think-queue/zipball/250650eb0e8ea5af4cfdc7ae46f3f4e0a24ac245",
+                "reference": "250650eb0e8ea5af4cfdc7ae46f3f4e0a24ac245",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -391,6 +447,9 @@
             "require": {
                 "topthink/think-helper": ">=1.0.4",
                 "topthink/think-installer": ">=1.0.10"
+            },
+            "require-dev": {
+                "topthink/framework": "~5.0.0"
             },
             "type": "think-extend",
             "extra": {
@@ -417,7 +476,7 @@
                 }
             ],
             "description": "The ThinkPHP5 Queue Package",
-            "time": "2018-05-04T05:29:53+00:00"
+            "time": "2018-10-15T10:16:55+00:00"
         },
         {
             "name": "topthink/think-worker",
@@ -464,16 +523,16 @@
         },
         {
             "name": "workerman/workerman",
-            "version": "v3.5.14",
+            "version": "v3.5.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/walkor/Workerman.git",
-                "reference": "6d70996b2b4ec94000e807246aca0e861c9601d8"
+                "reference": "f615edc0a550645778c6f8911830e4e12b0c5d45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/walkor/Workerman/zipball/6d70996b2b4ec94000e807246aca0e861c9601d8",
-                "reference": "6d70996b2b4ec94000e807246aca0e861c9601d8",
+                "url": "https://api.github.com/repos/walkor/Workerman/zipball/f615edc0a550645778c6f8911830e4e12b0c5d45",
+                "reference": "f615edc0a550645778c6f8911830e4e12b0c5d45",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -512,7 +571,7 @@
                 "asynchronous",
                 "event-loop"
             ],
-            "time": "2018-08-04T12:41:54+00:00"
+            "time": "2019-01-19T02:36:12+00:00"
         }
     ],
     "packages-dev": [],
