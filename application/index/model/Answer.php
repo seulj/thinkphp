@@ -24,7 +24,7 @@ class Answer
         return $page;
     }
 
-    public function getContent($id)
+    public function getAnswer($id)
     {
         return db('answer')->where('id', $id)->find();
     }
