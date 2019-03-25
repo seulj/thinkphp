@@ -21,9 +21,11 @@
                                         <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>标题</th>
-                                            <th>图片</th>
-                                            <th>创建时间</th>
+                                            <th>微信昵称</th>
+                                            <th>问卷标题</th>
+                                            <th>回答时长</th>
+                                            <th>总分</th>
+                                            <th>提交时间</th>
                                             <th>操作</th>
                                         </tr>
                                         </thead>
@@ -31,8 +33,10 @@
                                         {foreach $list as $vo}
                                         <tr>
                                             <td>{$vo.id}</td>
-                                            <td>{$vo.title}</td>
-                                            <td><img style="border-radius:0;height: 50px;width: 80px" src="{$vo.image}"></td>
+                                            <td>{$vo.user_id}</td>
+                                            <td>{$vo.questionnaire_id}</td>
+                                            <td>{$vo.duration}</td>
+                                            <td>{$vo.score}</td>
                                             <td>{$vo.create_time}</td>
                                             <td>
                                                 <button type="button" class="edit btn btn-rounded btn-sm"
@@ -93,7 +97,7 @@
                         }
                         var string = String
                         data.data.list.forEach(val => {
-                            string += '<tr><td>' + val.id + '</td><td>' + val.title + '</td><td>' + val.create_time + '</td><td><button type="button" class="edit btn btn-rounded btn-sm" onclick="showModal(' + val.id + ')">编辑</button></td></tr>'
+                            string += '<tr><td>' + val.id + '</td><td>' + val.user_id + '</td><td>' + val.questionnaire_id + '</td><td>' + val.duration + '</td><td>' + val.score + '</td><td>' + val.create_time + '</td><td><button type="button" class="edit btn btn-rounded btn-sm" onclick="showModal(' + val.id + ')">编辑</button></td></tr>'
                         });
                         $("tbody").append(string)
                         page = page + 1
