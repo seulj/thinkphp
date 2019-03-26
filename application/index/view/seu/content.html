@@ -33,7 +33,8 @@
                                         <tr>
                                             <td>{$vo.id}</td>
                                             <td>{$vo.title}</td>
-                                            <td><img style="border-radius:0;height: 50px;width: 80px" src="{$vo.image}"></td>
+                                            <td><img style="border-radius:0;height: 50px;width: 80px" src="{$vo.image}">
+                                            </td>
                                             <td>{$vo.create_time}</td>
                                             <td>
                                                 <button type="button" class="edit btn btn-rounded btn-sm"
@@ -66,19 +67,17 @@
                         <div class="modal-body">
                             <form class="forms-sample">
                                 <div class="form-group">
-                                    <div class="form-group">
-                                        <label>标题：</label>
-                                        <input class="form-control" id="editTitle"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>图片：</label>
-                                        <input class="form-control" id="editImage"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>正文：</label>
-                                        <textarea class="form-control" id="editArticle" rows="8">
+                                    <label>标题：</label>
+                                    <input class="form-control" id="editTitle"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>图片：</label>
+                                    <input class="form-control" id="editImage"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>正文：</label>
+                                    <textarea class="form-control" id="editArticle" rows="8">
                                         </textarea>
-                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -102,19 +101,17 @@
                         <div class="modal-body">
                             <form class="forms-sample">
                                 <div class="form-group">
-                                    <div class="form-group">
-                                        <label>标题：</label>
-                                        <input class="form-control" id="addTitle"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>图片：</label>
-                                        <input class="form-control" id="addImage"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>正文：</label>
-                                        <textarea class="form-control" id="addArticle" rows="8">
+                                    <label>标题：</label>
+                                    <input class="form-control" id="addTitle"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>图片：</label>
+                                    <input class="form-control" id="addImage"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>正文：</label>
+                                    <textarea class="form-control" id="addArticle" rows="8">
                                         </textarea>
-                                    </div>
                                 </div>
                             </form>
                         </div>
