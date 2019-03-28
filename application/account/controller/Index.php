@@ -8,9 +8,15 @@ class Index
 {
     public function index()
     {
-        $params['phone'] = '17775210320';
-        $json = myRequest('https://www.mental.com/index.php/api/User/test', 'GET');
-        $data = json_decode($json, true);
+        $url="https://www.mental.com/index.php/api/User/test";
+        $ch =curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+        $result =curl_exec($ch);
+        curl_close($ch);
+        $data=json_decode($result,true);
         return json(['data' => $data]);
     }
 
