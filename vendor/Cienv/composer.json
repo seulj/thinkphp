@@ -1,0 +1,29 @@
+{
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.oneitfarm.com"
+        }
+    ],
+    "name": "Cienv",
+    "description": "api ",
+    "autoload": {
+        "psr-4": {
+            "Cienv\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "suggest": {
+        
+    },
+    "type": "library",
+    "authors": [
+        {
+            "name": "xiapeifu",
+            "email": "xiapeifu@ci-123.info"
+        }
+    ]
+}

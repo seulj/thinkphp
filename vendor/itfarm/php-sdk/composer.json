@@ -1,0 +1,31 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.oneitfarm.com"
+        }
+    ],
+    "name": "itfarm/php-sdk",
+    "description": "\u4e2d\u53f0\u670d\u52a1\u8c03\u7528php\u7248sdk",
+    "autoload": {
+        "psr-4": {
+            "ItFarm\\PhpSdk\\": "src/"
+        }
+    },
+    "require": {
+        "psr/log": "^1.0",
+        "Cienv": "~0.0.6",
+        "lcobucci/jwt": "^3.2",
+        "php": "^5.6",
+        "syslog": "^0.0.1",
+        "whitemerry/phpkin": "^1.2",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "type": "library",
+    "authors": [
+        {
+            "name": "Zhou Miao",
+            "email": "zhoumiao@corp-ci.com"
+        }
+    ]
+}

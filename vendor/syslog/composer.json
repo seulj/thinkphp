@@ -1,0 +1,26 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.oneitfarm.com"
+        }
+    ],
+    "name": "syslog",
+    "description": "Simple PSR-3 logger implementation that outputs to syslog",
+    "autoload": {
+        "psr-4": {
+            "ItFarm\\SysLog\\": "src/"
+        }
+    },
+    "require": {
+        "psr/log": "^1.0",
+        "php": ">=5.4"
+    },
+    "type": "library",
+    "homepage": "https://packagist.oneitfarm.com",
+    "authors": [
+        {
+            "name": "Chris Johnson"
+        }
+    ]
+}
