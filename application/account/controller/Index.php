@@ -8,10 +8,9 @@ class Index
 {
     public function index()
     {
-//        $params['phone'] = '17775210320';
-//        $json = myRequest('https://www.mental.com/index.php/api/User/verifyPhone', 'POST', $params);
-//        $data = json_decode($json, true);
-        $data = 111;
+        $params['phone'] = '17775210320';
+        $json = myRequest('https://www.mental.com/index.php/api/User/verifyPhone', 'POST', $params);
+        $data = json_decode($json, true);
         return json(['data' => $data]);
     }
 
