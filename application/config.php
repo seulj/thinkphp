@@ -249,4 +249,7 @@ return [
     ],
 
     'jwt_key' => 'jfdksajfkldsajfkdjsaklfdajsfdsfdsklf',
+
+    'password'=>'qwerasd33654',
+    'appkey'=>'ymoqjgnvr18zu5pcpoqfwzj2wnfgeitt'
 ];
