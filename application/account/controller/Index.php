@@ -8,19 +8,14 @@ class Index
 {
     public function index()
     {
-        $url="https://www.mental.com/index.php/api/User/test";
-        $ch =curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-        $result =curl_exec($ch);
-        curl_close($ch);
-        $data=json_decode($result,true);
+        $params['phone'] = '17775210320';
+        $json = myRequest('https://qa.epihealth.cn/index.php/api/User/verifyPhone', 'POST', $params);
+
+        $data = json_decode($json, true);
         return json(['data' => $data]);
     }
 
-        public function getCaptcha()
+    public function getCaptcha()
     {
         $phone = input('post.phone');
         $appkey = config('appkey');
