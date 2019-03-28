@@ -25,7 +25,8 @@
         "topthink/think-mongo": "1.*",
         "topthink/think-oracle": "1.*",
         "firebase/php-jwt": "^5.0",
-        "topthink/think-migration": "1.*"
+        "topthink/think-migration": "1.*",
+        "itfarm/php-sdk": "^0.1.5"
     },
     "autoload": {
         "psr-4": {
@@ -38,10 +39,8 @@
     "config": {
         "preferred-install": "dist"
     },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://packagist.laravel-china.org"
-        }
-    }
+    "repositories": [{
+        "type": "composer",
+        "url": "https://packagist.oneitfarm.com"
+    }]
 }
