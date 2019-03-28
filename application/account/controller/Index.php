@@ -6,13 +6,23 @@ use ItFarm\PhpSdk\Client;
 
 class Index
 {
-    public function index()
+    public function getOpenid()
     {
-        $params['phone'] = '17775210320';
-        $json = myRequest('https://qa.epihealth.cn/index.php/api/User/verifyPhone', 'POST', $params);
+        $params['js_code'] = input('get.js_code') ?: cutout(0, 'js_code null');
+
+        $params['appid'] = config('weChat')['appid'];
+        $params['secret'] = config('weChat')['secret'];
+        $params['grant_type'] = config('weChat')['grant_type'];
+
+        $json = myRequest('https://api.weixin.qq.com/sns/jscode2session', 'GET', $params);
 
         $data = json_decode($json, true);
-        return json(['data' => $data]);
+
+        if (isset($data['errcode'])) {
+            return json(['ret' => 0, 'message' => 'null']);
+        } else {
+            return json(['ret' => 1, 'data' => ['openid' => $data['openid']]]);
+        }
     }
 
     public function getCaptcha()
@@ -32,6 +42,11 @@ class Index
             return json(['ret' => 1, 'data' => $response]);
         } else
             return json(['ret' => 0, 'data' => $response]);
+    }
+
+    public function getUser()
+    {
+        $params['phone'] = input('get.phone');
     }
 
     public function login()

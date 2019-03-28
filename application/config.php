@@ -240,7 +240,7 @@ return [
     ],
     'weChat' => [
         'appid' => 'wx8287ab44bf4a7b73',
-        'secret' => '5b74f9fe60a0f6fc54d5be98b15e6b33',
+        'secret' => '828302f071a94e25d33f2adb98c73953',
         'grant_type' => 'authorization_code',
     ],
     'http_exception_template'    =>  [
