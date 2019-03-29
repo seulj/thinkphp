@@ -58,4 +58,72 @@ class User
         return json($data);
     }
 
+    public function register()
+    {
+        $phone = input('post.phone');
+        $captcha = input('post.captcha');
+        $password = config('password');
+        $confirm_password = config('password');
+        $appkey = config('appkey');
+        $mold = input('post.mold');
+
+        $client = new Client();
+        $client->setAppkey($appkey);
+        $client->setServices([
+            'account' => config('account')
+        ]);
+        $post_register = array(
+            'captcha' => $captcha,
+            'password' => $password,
+            'confirm_password' => $confirm_password,
+            'appkey' => $appkey,
+            'phone' => $phone
+        );
+        $response = $client->call('account', 'post', 'main.php/json/register/phone', $post_register);
+
+        if ($response["state"] == 1) {
+            $post_perfect = array(
+                'appkey' => $appkey,
+                'account_id' => $response['account_id'],
+                'name' => '未设置'
+            );
+            $client = new Client();
+            $client->setAppkey($appkey);
+            $client->setServices([
+                'ucenter' => config('ucenter')
+            ]);
+            $responses = $client->call('ucenter', 'post', 'main.php/json/user_info/register_user', $post_perfect);
+            $data['phone'] = $phone;
+            $data['account_id'] = $response['account_id'];
+            if ($mold == 'doctor') {
+                $res = model('doctor')->register($data);
+                if ($res) {
+                    return json(['ret' => 1, 'message' => 'success']);
+                } else {
+                    return json(['ret' => 0, 'message' => 'failed']);
+                }
+            }
+            if ($mold == 'patient') {
+                $res = model('patient')->register($data);
+                if ($res) {
+                    return json(['ret' => 1, 'message' => 'success']);
+                } else {
+                    return json(['ret' => 0, 'message' => 'failed']);
+                }
+            }
+            return json(['ret' => 1, 'data' => $responses]);
+        } else
+            return json(['ret' => 0, 'data' => $response]);
+    }
+
+    public function completeInformation()
+    {
+        $openid = input('post.openid') ?: cutout(0, 'openid null');
+        $
+        $result = model('patient')->updateUser($openid);
+
+
+
+    }
+
 }

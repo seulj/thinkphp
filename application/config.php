@@ -251,5 +251,7 @@ return [
     'jwt_key' => 'jfdksajfkldsajfkdjsaklfdajsfdsfdsklf',
 
     'password'=>'qwerasd33654',
-    'appkey'=>'ymoqjgnvr18zu5pcpoqfwzj2wnfgeitt'
+    'appkey'=>'ymoqjgnvr18zu5pcpoqfwzj2wnfgeitt',
+    'account'=>'https://ci-account.dev.oneitfarm.com/',
+    'ucenter' => 'https://ci-ucenter.dev.oneitfarm.com/'
 ];
