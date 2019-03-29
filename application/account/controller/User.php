@@ -52,8 +52,8 @@ class User
 
     public function getUser()
     {
-        $params['openid'] = input('get.openid') ?: cutout(0, 'openid null');
-        $json = myRequest('https://qa.epihealth.cn/index.php/api/User/getUser', 'GET', $params);
+        $params['phone'] = input('get.phone') ?: cutout(0, 'phone null');
+        $json = myRequest('https://qa.epihealth.cn/index.php/api/User/getUserByPhone', 'GET', $params);
         $data = json_decode($json, true);
         if ($data['ret'] == 1) {
             $menses = $data['data']['menses'];
@@ -124,10 +124,14 @@ class User
 
     public function completeInformation()
     {
-        $openid = input('post.openid') ?: cutout(0, 'openid null');
+        $params['openid'] = input('post.openid') ?: cutout(0, 'openid null');
+        $phone = input('post.phone') ?: cutout(0, 'phone null');
         $params['name'] = input('post.name') ?: cutout(0, 'name null');
+        $nickname = input('post.nickname') ?: cutout(0, 'nickname null');
+        $params['nickname'] = emoji_reject($nickname);
+        $params['avatar_url'] = input('post.avatar_url') ?: cutout(0, 'avatar_url null');
         $params['due_childbirth_date'] = input('post.due_childbirth_date') ?: cutout(0, 'due_childbirth_date null');
-        $result = model('patient')->updateUser($openid, $params);
+        $result = model('patient')->updateUser($phone, $params);
         if ($result) {
             return json(['ret' => 1, 'msg' => 'success']);
         } else {
