@@ -32,6 +32,7 @@ class CreateTableUser extends Migrator
         $this->table('user')
             ->addColumn('name', 'string', array('comment' => '姓名', 'limit' => 20))
             ->addColumn('phone', 'string', array('comment' => '手机号', 'limit' => 20))
+            ->addColumn('account_id', 'string', array('comment' => '手机号', 'limit' => 200))
             ->addColumn('openid', 'string', array('comment' => '微信openid', 'limit' => 40))
             ->addColumn('nickname', 'string', array('comment' => '微信昵称', 'limit' => 20))
             ->addColumn('avatar_url', 'string', array('comment' => '头像url', 'limit' => 200))
