@@ -55,8 +55,13 @@ class User
         $params['openid'] = input('get.openid') ?: cutout(0, 'openid null');
         $json = myRequest('https://qa.epihealth.cn/index.php/api/User/getUser', 'GET', $params);
         $data = json_decode($json, true);
-        var_dump($data['data']);
-        return json($data);
+        if ($data['ret'] == 1) {
+            $menses = $data['data']['menses'];
+            $due_childbirth_date = date('Y-m-d', strtotime("{$menses} +280 day"));
+            return json(['ret' => 1, 'msg' => 'success', 'data' => ['name' => $data['data']['name'], 'due_childbirth_date' => $due_childbirth_date]]);
+        } else {
+            return json(['ret' => 0, 'msg' => 'no user']);
+        }
     }
 
     public function register()
