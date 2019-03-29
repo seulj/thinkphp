@@ -26,9 +26,9 @@ class Patient
         return db('user')->where('account_id', $account_id)->find();
     }
 
-    public function updatePatient($phone, $name)
+    public function updateUser($openid, $params)
     {
-        return db('user')->where('phone', $phone)->update(['name' => $name]);
+        return db('user')->where('openid', $openid)->update($params);
     }
 
     public function updateAccountId($phone, $account_id)

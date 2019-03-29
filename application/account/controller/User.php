@@ -65,7 +65,7 @@ class User
         $password = config('password');
         $confirm_password = config('password');
         $appkey = config('appkey');
-        $mold = input('post.mold');
+        $mold = input('post.mold') ?: cutout(0, 'mold null');
 
         $client = new Client();
         $client->setAppkey($appkey);
@@ -119,11 +119,14 @@ class User
     public function completeInformation()
     {
         $openid = input('post.openid') ?: cutout(0, 'openid null');
-        $
-        $result = model('patient')->updateUser($openid);
-
-
-
+        $params['name'] = input('post.name') ?: cutout(0, 'name null');
+        $params['due_childbirth_date'] = input('post.due_childbirth_date') ?: cutout(0, 'due_childbirth_date null');
+        $result = model('patient')->updateUser($openid, $params);
+        if ($result) {
+            return json(['ret' => 1, 'msg' => 'success']);
+        } else {
+            return json(['ret' => 0, 'msg' => 'failed']);
+        }
     }
 
 }
