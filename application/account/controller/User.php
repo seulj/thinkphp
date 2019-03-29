@@ -54,8 +54,7 @@ class User
     {
         $params['openid'] = input('get.openid') ?: cutout(0, 'openid null');
         $json = myRequest('https://qa.epihealth.cn/index.php/api/User/getUser', 'GET', $params);
-        $data = json_decode($json, true);
-        return $data;
+        return $json;
     }
 
 }
