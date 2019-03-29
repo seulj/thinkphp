@@ -38,7 +38,7 @@ class Patient
 
     public function findByOpenid($openid)
     {
-        return db('user')->where(array('openid' => $openid, 'isDelete' => 0))->order('id desc')->select();
+        return db('user')->where(array('openid' => $openid))->order('id desc')->select();
     }
 
 }
