@@ -50,7 +50,7 @@ class User
             return json(['ret' => 0, 'data' => $response]);
     }
 
-    public function getUser()
+    public function getUserByPhone()
     {
         $params['phone'] = input('get.phone') ?: cutout(0, 'phone null');
         $json = myRequest('https://qa.epihealth.cn/index.php/api/User/getUserByPhone', 'GET', $params);
@@ -61,6 +61,33 @@ class User
             return json(['ret' => 1, 'msg' => 'success', 'data' => ['name' => $data['data']['name'], 'due_childbirth_date' => $due_childbirth_date]]);
         } else {
             return json(['ret' => 0, 'msg' => 'no user']);
+        }
+    }
+
+    public function getUser()
+    {
+        $openid = input('get.openid') ?: cutout(0, 'openid null');
+
+        $user_info = model('user')->findByOpenid($openid);
+
+        if (empty($user_info[0])) {
+            return json(['ret' => 0, 'message' => 'no user']);
+
+        } else {
+            $token = encodeJwt($user_info[0]['id']);
+            return json(
+                ['ret' => 1,
+                    'data' => [
+                        'id' => $user_info[0]['id'],
+                        'name' => $user_info[0]['name'],
+                        'nickname' => $user_info[0]['nickname'],
+                        'phone' => $user_info[0]['phone'],
+                        'avatar_url' => $user_info[0]['avatar_url'],
+                        'due_childbirth_date'=>$user_info[0]['due_childbirth_date'],
+                        'openid' => $user_info[0]['openid'],
+                        'token' => $token
+                    ]
+                ]);
         }
     }
 

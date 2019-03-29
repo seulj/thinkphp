@@ -36,4 +36,9 @@ class Patient
         return db('user')->where('phone', $phone)->update(['account_id' => $account_id]);
     }
 
+    public function findByOpenid($openid)
+    {
+        return db('user')->where(array('openid' => $openid, 'isDelete' => 0))->order('id desc')->select();
+    }
+
 }
