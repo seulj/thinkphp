@@ -68,7 +68,7 @@ class User
     {
         $openid = input('get.openid') ?: cutout(0, 'openid null');
 
-        $user_info = model('user')->findByOpenid($openid);
+        $user_info = model('patient')->findByOpenid($openid);
 
         if (empty($user_info[0])) {
             return json(['ret' => 0, 'message' => 'no user']);
