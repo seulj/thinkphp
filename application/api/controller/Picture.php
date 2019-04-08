@@ -20,9 +20,9 @@ class Picture
             if ($res['state'] == 1) {
                 return json(['ret' => 1, 'data' => $res['data']['url']]);
             } else {
-                throw new Exception($res['msg'], -1);
+                throw new \Exception($res['msg'], -1);
             }
-        } catch (Exception $ex) {
+        } catch (\Exception $ex) {
             return json(['ret' => 0, 'data' => $ex]);
         }
     }
